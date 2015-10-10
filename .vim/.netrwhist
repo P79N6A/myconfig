@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/home/ian/workspace/breeze/math/src/main/scala/breeze/optimize'
+let g:netrw_dirhist_2='/home/ian/workspace/LA-benchmark/src/main/scala/org/apache/spark/mllib/optimization'
+let g:netrw_dirhist_3='/home/ian/workspace/netlib-java/native_system/osx-x86_64/target/netlib-native'
+let g:netrw_dirhist_4='/home/ian/workspace/ml-linalg/linalg-cpu'
+let g:netrw_dirhist_5='/home/ian/workspace/ml-linalg/perf/src/test/scripts/perl5'
+let g:netrw_dirhist_6='/home/ian/workspace/ml-linalg/perf/src'
+let g:netrw_dirhist_7='/home/ian/workspace/ml-linalg/perf'
+let g:netrw_dirhist_8='/home/ian/workspace/ml-linalg/.git/rebase-merge'
+let g:netrw_dirhist_9='/home/ian/tools-master'

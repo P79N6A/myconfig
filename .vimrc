@@ -3,9 +3,9 @@ set showmatch
 set ruler
 
 colorscheme desert
+set background=dark
 syntax enable
 syntax on
-set background=dark
 set t_Co=256
 
 filetype on
@@ -36,6 +36,7 @@ set ignorecase
 set smartcase
 
 set foldenable
+set foldcolumn=1
 set foldmethod=indent
 set foldlevel=99
 
@@ -102,3 +103,14 @@ set autochdir
 
 let g:miniBufExplMapWindowNavArrows = 1 
 inoremap jk <ESC>
+
+set omnifunc=syntaxcomplete#Complete
+
+if has('mouse')
+    set mouse=a
+endif
+
+set nobackup
+set nowb
+set noswapfile
+set laststatus=2

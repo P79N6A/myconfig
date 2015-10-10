@@ -149,3 +149,5 @@ alias sr708="screen -t sr708 ssh -o ProxyCommand='/bin/nc -X 5 -x 10.239.44.190:
 
 
 #. /home/ian/torch/install/bin/torch-activate
+set -o vi
+export EDITOR=vim
