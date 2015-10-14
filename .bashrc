@@ -141,6 +141,9 @@ export PATH=$PATH:$SPARK_HOME/sbin
 export HADOOP_CONF_DIR=$HADOOP_HOME/etc/hadoop
 # -- Hadoop Environment Variables End -- #
 
+alias sr701="screen -t sr701 ssh -o ProxyCommand='/bin/nc -X 5 -x 10.239.44.190:1080 %h %p' yihengw@10.0.5.1"
+alias sr702="screen -t sr702 ssh -o ProxyCommand='/bin/nc -X 5 -x 10.239.44.190:1080 %h %p' yihengw@10.0.5.2"
+alias sr703="screen -t sr703 ssh -o ProxyCommand='/bin/nc -X 5 -x 10.239.44.190:1080 %h %p' yihengw@10.0.5.3"
 alias sr704="screen -t sr704 ssh -o ProxyCommand='/bin/nc -X 5 -x 10.239.44.190:1080 %h %p' yihengw@10.0.5.4"
 alias sr705="screen -t sr705 ssh -o ProxyCommand='/bin/nc -X 5 -x 10.239.44.190:1080 %h %p' yihengw@10.0.5.5"
 alias sr706="screen -t sr706 ssh -o ProxyCommand='/bin/nc -X 5 -x 10.239.44.190:1080 %h %p' yihengw@10.0.5.6"

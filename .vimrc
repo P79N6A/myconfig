@@ -19,7 +19,6 @@ set autoread
 set nobackup
 set noswapfile
 
-set cursorcolumn
 set cursorline
 
 set tabstop=4
@@ -114,3 +113,4 @@ set nobackup
 set nowb
 set noswapfile
 set laststatus=2
+set pastetoggle=<F2>
