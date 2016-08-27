@@ -141,16 +141,34 @@ export PATH=$PATH:$SPARK_HOME/sbin
 export HADOOP_CONF_DIR=$HADOOP_HOME/etc/hadoop
 # -- Hadoop Environment Variables End -- #
 
-alias sr701="screen -t sr701 ssh -o ProxyCommand='/bin/nc -X 5 -x 10.239.44.190:1080 %h %p' yihengw@10.0.5.1"
-alias sr702="screen -t sr702 ssh -o ProxyCommand='/bin/nc -X 5 -x 10.239.44.190:1080 %h %p' yihengw@10.0.5.2"
-alias sr703="screen -t sr703 ssh -o ProxyCommand='/bin/nc -X 5 -x 10.239.44.190:1080 %h %p' yihengw@10.0.5.3"
+alias sr701="screen -t sr701 ssh -o ProxyCommand='/bin/nc -X 5 -x 10.239.44.190:1080 %h %p' test@10.0.5.1"
+alias sr702="screen -t sr702 ssh -o ProxyCommand='/bin/nc -X 5 -x 10.239.44.190:1080 %h %p' test@10.0.5.2"
+alias sr703="screen -t sr703 ssh -o ProxyCommand='/bin/nc -X 5 -x 10.239.44.190:1080 %h %p' test@10.0.5.3"
 alias sr704="screen -t sr704 ssh -o ProxyCommand='/bin/nc -X 5 -x 10.239.44.190:1080 %h %p' yihengw@10.0.5.4"
 alias sr705="screen -t sr705 ssh -o ProxyCommand='/bin/nc -X 5 -x 10.239.44.190:1080 %h %p' yihengw@10.0.5.5"
 alias sr706="screen -t sr706 ssh -o ProxyCommand='/bin/nc -X 5 -x 10.239.44.190:1080 %h %p' yihengw@10.0.5.6"
-alias sr707="screen -t sr707 ssh -o ProxyCommand='/bin/nc -X 5 -x 10.239.44.190:1080 %h %p' yihengw@10.0.5.7"
+alias sr707="screen -t sr706 ssh -o ProxyCommand='/bin/nc -X 5 -x 10.239.44.190:1080 %h %p' yihengw@10.0.5.7"
 alias sr708="screen -t sr708 ssh -o ProxyCommand='/bin/nc -X 5 -x 10.239.44.190:1080 %h %p' yihengw@10.0.5.8"
+alias sr709="screen -t sr709 ssh -o ProxyCommand='/bin/nc -X 5 -x 10.239.44.190:1080 %h %p' test@10.0.5.9"
+alias sr710="screen -t sr710 ssh -o ProxyCommand='/bin/nc -X 5 -x 10.239.44.190:1080 %h %p' test@10.0.5.10"
+alias dev="screen -t dev ssh ian@yihengw-dev.sh.intel.com"
+
+alias gondolin="screen -t gondolin ssh yihengw@10.239.47.211"
+alias gondolin-016="screen -t gondolin-016 ssh -o ProxyCommand='/bin/nc -X 5 -x 127.0.0.1:8888 %h %p' arda@172.168.2.116"
+alias gondolin-061="screen -t gondolin-061 ssh -o ProxyCommand='/bin/nc -X 5 -x 127.0.0.1:8888 %h %p' yihengw@172.168.2.161"
+alias gondolin-066="screen -t gondolin-066 ssh -o ProxyCommand='/bin/nc -X 5 -x 127.0.0.1:8888 %h %p' arda@172.168.2.166"
+alias gondolin-071="screen -t gondolin-071 ssh -o ProxyCommand='/bin/nc -X 5 -x 127.0.0.1:8888 %h %p' yihengw@172.168.2.171"
+alias gondolin-proxy="ssh -D 8888 -f -q -N yihengw@10.239.47.211"
+
+alias valinor="screen -t valinor ssh yihengw@10.239.47.210"
 
 
 #. /home/ian/torch/install/bin/torch-activate
 set -o vi
 export EDITOR=vim
+
+export PERFJ=/home/ian/perfj-1.0
+export PATH=$PATH:$PERFJ/bin
+export PATH=$PATH:/home/ian/workspace/FlameGraph
+
+alias cpjar="scp ian@ian-Z97X-UD5H.sh.intel.com:/home/ian/workspace/WebScaleML/algorithms/target/WebScaleML-algorithms-1.0.0-SNAPSHOT-jar-with-dependencies.jar ./"
