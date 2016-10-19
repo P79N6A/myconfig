@@ -155,10 +155,26 @@ alias dev="screen -t dev ssh ian@yihengw-dev.sh.intel.com"
 
 alias gondolin="screen -t gondolin ssh yihengw@10.239.47.211"
 alias gondolin-016="screen -t gondolin-016 ssh -o ProxyCommand='/bin/nc -X 5 -x 127.0.0.1:8888 %h %p' arda@172.168.2.116"
+alias gondolin-018="screen -t gondolin-018 ssh -o ProxyCommand='/bin/nc -X 5 -x 127.0.0.1:8888 %h %p' arda@172.168.2.118"
+alias gondolin-020="screen -t gondolin-020 ssh -o ProxyCommand='/bin/nc -X 5 -x 127.0.0.1:8888 %h %p' yihengw@172.168.2.120"
+alias gondolin-025="screen -t gondolin-025 ssh -o ProxyCommand='/bin/nc -X 5 -x 127.0.0.1:8888 %h %p' yihengw@172.168.2.125"
+alias gondolin-026="screen -t gondolin-026 ssh -o ProxyCommand='/bin/nc -X 5 -x 127.0.0.1:8888 %h %p' yihengw@172.168.2.126"
+alias gondolin-027="screen -t gondolin-027 ssh -o ProxyCommand='/bin/nc -X 5 -x 127.0.0.1:8888 %h %p' yihengw@172.168.2.127"
+alias gondolin-029="screen -t gondolin-029 ssh -o ProxyCommand='/bin/nc -X 5 -x 127.0.0.1:8888 %h %p' arda@172.168.2.129"
+alias gondolin-046="screen -t gondolin-046 ssh -o ProxyCommand='/bin/nc -X 5 -x 127.0.0.1:8888 %h %p' arda@172.168.2.146"
+alias gondolin-047="screen -t gondolin-047 ssh -o ProxyCommand='/bin/nc -X 5 -x 127.0.0.1:8888 %h %p' arda@172.168.2.147"
 alias gondolin-061="screen -t gondolin-061 ssh -o ProxyCommand='/bin/nc -X 5 -x 127.0.0.1:8888 %h %p' yihengw@172.168.2.161"
+alias gondolin-062="screen -t gondolin-062 ssh -o ProxyCommand='/bin/nc -X 5 -x 127.0.0.1:8888 %h %p' arda@172.168.2.162"
 alias gondolin-066="screen -t gondolin-066 ssh -o ProxyCommand='/bin/nc -X 5 -x 127.0.0.1:8888 %h %p' arda@172.168.2.166"
+alias gondolin-067="screen -t gondolin-067 ssh -o ProxyCommand='/bin/nc -X 5 -x 127.0.0.1:8888 %h %p' arda@172.168.2.167"
 alias gondolin-071="screen -t gondolin-071 ssh -o ProxyCommand='/bin/nc -X 5 -x 127.0.0.1:8888 %h %p' yihengw@172.168.2.171"
 alias gondolin-proxy="ssh -D 8888 -f -q -N yihengw@10.239.47.211"
+
+alias bwcluster="screen -t bwcluster ssh dltest@10.239.47.135"
+alias bwcluster-proxy="ssh -D 8889 -f -q -N dltest@10.239.47.135"
+alias bw-node1="screen -t bw-node1 ssh -o ProxyCommand='/bin/nc -X 5 -x 127.0.0.1:8889 %h %p' dltest@bw-node1"
+alias bw-node2="screen -t bw-node2 ssh -o ProxyCommand='/bin/nc -X 5 -x 127.0.0.1:8889 %h %p' dltest@bw-node2"
+
 
 alias valinor="screen -t valinor ssh yihengw@10.239.47.210"
 
@@ -171,4 +187,5 @@ export PERFJ=/home/ian/perfj-1.0
 export PATH=$PATH:$PERFJ/bin
 export PATH=$PATH:/home/ian/workspace/FlameGraph
 
-alias cpjar="scp ian@ian-Z97X-UD5H.sh.intel.com:/home/ian/workspace/WebScaleML/algorithms/target/WebScaleML-algorithms-1.0.0-SNAPSHOT-jar-with-dependencies.jar ./"
+export LC_ALL=C
+export PATH=$PATH:/opt/intel/bin
